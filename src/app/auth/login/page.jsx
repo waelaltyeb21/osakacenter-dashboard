@@ -7,7 +7,6 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 export default function Login() {
-  const [loading, setLoading] = useState(false);
   const LoginTransilations = useTranslations("login");
   const router = useRouter();
   const form = useForm({
@@ -26,14 +25,12 @@ export default function Login() {
   });
 
   const HandleLogin = async () => {
-    setLoading(true);
     const response = await RequestController(
       "/auth/login",
       "POST",
       form.values
     );
     if (response.status === 200) {
-      setLoading(false);
       window.localStorage.setItem(
         "Supervisor",
         JSON.stringify(response.data.supervisor)
@@ -75,9 +72,7 @@ export default function Login() {
               {...form.getInputProps("password")}
             />
           </Input.Wrapper>
-          <Button type="submit" disabled={loading}>
-            {loading ? "Loading..." : LoginTransilations("login")}
-          </Button>
+          <Button type="submit">{LoginTransilations("login")}</Button>
         </form>
       </article>
     </section>

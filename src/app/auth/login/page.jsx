@@ -35,7 +35,7 @@ export default function Login() {
         "Supervisor",
         JSON.stringify(response.data.supervisor)
       );
-      router.replace("/dashboard/");
+      router.replace("/dashboard/students");
     }
   };
   return (

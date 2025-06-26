@@ -1,0 +1,64 @@
+import { Table } from "@mantine/core";
+import React from "react";
+
+const ResultList = ({ result }) => {
+  console.log(result);
+  console.table([
+    result?.studentId,
+    result?.name,
+    result?.course,
+    result?.group,
+    result?.supervisor,
+    result?.time,
+  ]);
+  const ResultInfo = {
+    caption: "Result Table",
+    head: ["#", "الاسم", "الكورس", "المستوى", "المشرف", "الزمن"],
+    body: [
+      [
+        result?.studentId,
+        result?.name,
+        result?.course,
+        result?.group,
+        result?.supervisor,
+        result?.time,
+      ],
+    ],
+  };
+
+  const ResultData = {
+    caption: "Result Table",
+    head: [
+      "Reading",
+      "Writing",
+      "Speaking",
+      "Listening",
+      "Overall",
+      "Rating",
+      "Note",
+    ],
+    body: [
+      [
+        result.result.reading,
+        result.result.writing,
+        result.result.spaeking,
+        result.result.listening,
+        result.result.overall,
+        result.result.rating,
+        result.result.note,
+      ],
+    ],
+  };
+  return (
+    <article className="mt-10 flex flex-col gap-8">
+      <div className="header-info">
+        <Table striped withTableBorder withColumnBorders data={ResultInfo} />
+      </div>
+      <div className="student-result">
+        <Table striped withTableBorder withColumnBorders data={ResultData} />
+      </div>
+    </article>
+  );
+};
+
+export default ResultList;

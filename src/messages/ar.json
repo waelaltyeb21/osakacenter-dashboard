@@ -1,0 +1,112 @@
+{
+    "Welcome": {
+        "hello": "مرحبا",
+        "name": "مركز اوساكا",
+        "platform": "منصة اوساكا سنتر التعليمية",
+        "welcome": "مرحبا بكم في منصة اوساكا سنتر التعليمية!",
+        "greeting": "مرحبا بك مجددا،   "
+    },
+    "login": {
+        "title": "منصة معهد اوساكا سنتر للغات",
+        "username": "اسم المستخدم",
+        "email": "البريد الالكتروني",
+        "password": "كلمة المرور",
+        "login": "تسجيل الدخول"
+    },
+    "sidebar": {
+        "overview": "الرئيسية",
+        "students": "الطلاب",
+        "groups": "المجموعات",
+        "courses": "الدورات",
+        "blogs": "المدونات",
+        "magazines": "المجلات",
+        "results": "النتائج",
+        "profile": "الملف الشخصي",
+        "settings": "الإعدادات",
+        "supervisors": "المشرفون",
+        "help": "المساعدة"
+    },
+    "students": {
+        "students-fields": {
+            "name": "الاسم",
+            "age": "العمر",
+            "phone": "الهاتف",
+            "address": "السكن",
+            "course": "الكورس",
+            "group": "المجموعة",
+            "time": "الوقت",
+            "paymentStatus": "حالة الدفع",
+            "joinedAt": "الانضمام",
+            "actions": "الاجراءات"
+        },
+        "AddStudent": {
+            "title": "اضافة طالب جديد"
+        }
+    },
+    "groups": {},
+    "courses": {
+        "title": "الكورسات",
+        "add_course": "اضافة كورس جديد",
+        "available": "متاح",
+        "unavailable": "غير متاح",
+        "currancy": "ج.س",
+        "course": "اسم الكورس",
+        "cover": "صورة غلاف الكورس",
+        "duration": "مدة الكورس",
+        "price": "سعر الكورس",
+        "description": "وصف الكورس",
+        "isAvailable": "هل الكورس متاح للتسجيل",
+        "save": "تحديث",
+        "update_course": "تحديث الكورس",
+        "delete_course": "حذف الكورس",
+        "confirm_delete": "هل انت متاكد من حذف الكورس؟ لا يمكنك التراجع عن هذا الاجراء",
+        "delete": "تأكيد",
+        "cancel": "الغاء"
+    },
+    "magazines": {
+        "title": "مجلات اوساكا",
+        "version": "نسخة المجلة",
+        "description": "وصف المجلة",
+        "save_magazine": "حفظ المجلة",
+        "update_magazine": "تحديث المجلة",
+        "delete_magazine": "حذف المجلة",
+        "confirm_delete": "هل انت متاكد من حذف المجلة؟",
+        "delete": "حذف",
+        "add_magazine": "اضافة مجلة جديدة",
+        "download": "تحميل المجلة",
+        "no_magazines": "لا يوجد مجلات"
+    },
+    "results": {
+        "result-type": "نوع النتيجة",
+        "student": "طالب",
+        "group": "مجموعة",
+        "studentId": "رقم الطالب",
+        "name": "الاسم",
+        "course": "الكورس",
+        "level": "المستوى",
+        "supervisor": "المشرف",
+        "time": "الوقت",
+        "query": "الاستعلام",
+        "no-result": "لا يوجد نتايج",
+        "reading": "القراءة",
+        "writing": "الكتابة",
+        "speaking": "المخاطبة",
+        "listening": "الاستماع",
+        "overall": "المعدل",
+        "rating": "التقدير",
+        "result-of-level": "نتيجة المستوى {level}",
+        "download": "تحميل النتيجة كملف PDF"
+    },
+    "helpers": {
+        "student-payment-Status": {
+            "fullPaid": "مدفوع بالكامل",
+            "halfPaid": "مدفوع جزئيا",
+            "free": "منحة مجانية"
+        },
+        "group-status": {
+            "Under Registration": "قيد التسجيل",
+            "Completed": "مكتمل",
+            "On Going": "قيد التنفيذ"
+        }
+    }
+}

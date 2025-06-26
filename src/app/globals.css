@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --heading-size: 2rem;   /* 32px */
+  --body-size: 1rem;      /* 16px */
+  --brand: #32cd32,
+  --text: #1e90ff,
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #1e90ff;
+  --secondary: #ff6347;
+  --accent: #32cd32;
+  --border: #dcdcdc;
+  --text: #333333;
+  --link: #1e90ff;
+  --link-hover: #1a73e8;
+  --error: #ff4d4d;
+  --success: #28a745;
+  --warning: #ffc107;
+  --info: #17a2b8;
+  /* Font Size */
+  --font-sm: 12px;
+  --font-md: 14px;
+  --font-lg: 16px;
+  --font-xl: 18px;
+  --font-2xl: 20px;
+  --font-3xl: 24px;
+  --font-4xl: 28px;
+  /* Font Family */
+  --font-cairo: "Cairo", sans-serif !important;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font1: var(--font-cairo);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand: #238498,
+    --color: #e23123,
+    --background: #121212;
+    --foreground: #e0e0e0;
+    --primary: #bb86fc;
+    --secondary: #03dac6;
+    --accent: #03dac5;
+    --border: #424242;
+    --text: #e0e0e0;
+    --link: #bb86fc;
+    --link-hover: #3700b3;
+    --error: #cf6679;
+    --success: #03dac6;
+    --warning: #ff9800;
+    --info: #03a9f4;
+    /* Font Size */
+    --font-sm: 12px;
+    --font-md: 14px;
+    --font-lg: 16px;
+    --font-xl: 18px;
+    --font-2xl: 20px;
+    --font-3xl: 24px;
+    --font-4xl: 28px;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font1) !important;
+  overflow-x: hidden !important;
+  font-size: 1rem !important;
+  /* user-select: none !important; */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+th, td {
+  @apply whitespace-nowrap;
+}
+/* 
+section {
+  @apply p-4 border-2 border-slate-200 shadow-lg rounded-lg;
+} */
+
+.transition-ease {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.bordered {
+  @apply border-2 border-slate-100 rounded-lg;
+}

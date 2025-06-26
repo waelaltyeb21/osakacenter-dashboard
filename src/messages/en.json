@@ -1,0 +1,95 @@
+{
+    "Welcome": {
+        "hello": "Hello",
+        "name": "Osaka Center",
+        "platform": "Osaka Center Educational Platform",
+        "welcome": "Welcome to our application!",
+        "greeting": "Welcome Back, "
+    },
+    "login": {
+        "title": "Osaka Center Platform",
+        "username": "Username",
+        "email": "Eamil",
+        "password": "Password",
+        "login": "Login"
+    },
+    "sidebar": {
+        "overview": "overview",
+        "students": "students",
+        "groups": "groups",
+        "courses": "courses",
+        "blogs": "blogs",
+        "magazines": "magazines",
+        "results": "result",
+        "profile": "profile",
+        "supervisors": "supervisors"
+    },
+    "students": {
+        "students-fields": {
+            "name": "Full Name",
+            "age": "Age",
+            "phone": "Phone",
+            "address": "Address",
+            "course": "Course",
+            "group": "Group",
+            "time": "Time",
+            "paymentStatus": "Payment Status",
+            "joinedAt": "joined At",
+            "actions": "Actions"
+        }
+    },
+    "groups": {},
+    "courses": {
+        "title": "Courses",
+        "add_course": "Add New Course",
+        "available": "Available",
+        "unavailable": "Unavailable",
+        "currancy": "SDG",
+        "course": "Course Name",
+        "cover": "Course Cover Picture",
+        "duration": "Course Duration",
+        "price": "Course Price",
+        "description": "Course Description",
+        "isAvailable": "is Available For Registration ?",
+        "save": "Save",
+        "delete_course": "Delete Course",
+        "confirm_delete": "Are you sure you want to delete this course ? you won't be able to restore it back.",
+        "delete": "Yes",
+        "cancel": "Cancel"
+    },
+    "blogs": {},
+    "magazines": {
+        "title": "Osaka Magazines",
+        "version": "Magazine Version",
+        "description": "Magazine Description",
+        "save_magazine": "Save",
+        "update_magazine": "Update Magazine",
+        "delete_magazine": "Delete Magazine",
+        "confirm_delete": "Are you sure you want to delete this magazine ? you won't be able to restore it back.",
+        "delete": "Delete",
+        "add_magazine": "Add New Magazine",
+        "download": "Download",
+        "no_magazines": "No Magazines Found"
+    },
+    "results": {
+        "result-type": "Result Type",
+        "student": "Student",
+        "group": "Group",
+        "studentId": "Student ID",
+        "name": "Full Name",
+        "course": "Course",
+        "level": "Level",
+        "supervisor": "Supervisor",
+        "time": "Time",
+        "query": "Query",
+        "no-result": "No Results",
+        "reading": "Reading",
+        "writing": "Writing",
+        "speaking": "Speaking",
+        "listening": "Listening",
+        "overall": "Overall",
+        "rating": "Rating",
+        "result-of-level": "Result of Level {level}",
+        "download": "Download Result As PDF"
+    }
+}

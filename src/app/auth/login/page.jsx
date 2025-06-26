@@ -1,10 +1,10 @@
 "use client";
+import React from "react";
 import { RequestController } from "@/lib/RequestController";
 import { Button, Input, PasswordInput, TextInput } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
 
 export default function Login() {
   const LoginTransilations = useTranslations("login");

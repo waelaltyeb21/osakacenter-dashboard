@@ -12,12 +12,9 @@ import Link from "@tiptap/extension-link";
 
 // Styles
 import "@mantine/tiptap/styles.css";
-// import "@/components/tiptap-node/image-upload-node/image-upload-node.scss";
 import { useState } from "react";
 import Loading from "@/app/Loading";
 import { RequestController } from "@/lib/RequestController";
-// import { ImageUploadButton } from "../tiptap-ui/image-upload-button";
-// import Image from "@tiptap/extension-image";
 
 const content = '<h2 style="text-align: center;">Content Goes Here</h2>';
 
@@ -44,12 +41,6 @@ const TextEditor = () => {
       Superscript,
       SubScript,
       Highlight,
-      // Image.configure({
-      //   inline: true,
-      //   HTMLAttributes: {
-      //     class: "tiptap-image-upload",
-      //   },
-      // }),
       TextAlign.configure({ types: ["heading", "paragraph"] }),
     ],
     immediatelyRender: false,
@@ -149,9 +140,6 @@ const TextEditor = () => {
               </RichTextEditor.ControlsGroup>
 
               {/* Image upload */}
-              {/* <RichTextEditor.ControlsGroup>
-                <ImageUploadButton editor={editor} />
-              </RichTextEditor.ControlsGroup> */}
 
               <RichTextEditor.ControlsGroup>
                 <RichTextEditor.AlignLeft />

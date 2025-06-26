@@ -1,12 +1,5 @@
 "use client";
-import {
-  Button,
-  CheckIcon,
-  Container,
-  Divider,
-  Select,
-  TextInput,
-} from "@mantine/core";
+import { Button, Divider, Select, TextInput } from "@mantine/core";
 import { RichTextEditor } from "@mantine/tiptap";
 import { useEditor } from "@tiptap/react";
 import Highlight from "@tiptap/extension-highlight";
@@ -19,14 +12,12 @@ import Link from "@tiptap/extension-link";
 
 // Styles
 import "@mantine/tiptap/styles.css";
-import "@/components/tiptap-node/image-upload-node/image-upload-node.scss";
+// import "@/components/tiptap-node/image-upload-node/image-upload-node.scss";
 import { useState } from "react";
 import Loading from "@/app/Loading";
-import {
-  ImageUploadButton,
-  useImageUploadButton,
-} from "../tiptap-ui/image-upload-button";
-import Image from "@tiptap/extension-image";
+import { RequestController } from "@/lib/RequestController";
+// import { ImageUploadButton } from "../tiptap-ui/image-upload-button";
+// import Image from "@tiptap/extension-image";
 
 const content = '<h2 style="text-align: center;">Content Goes Here</h2>';
 
@@ -53,19 +44,19 @@ const TextEditor = () => {
       Superscript,
       SubScript,
       Highlight,
-      Image.configure({
-        inline: true,
-        HTMLAttributes: {
-          class: "tiptap-image-upload",
-        },
-      }),
+      // Image.configure({
+      //   inline: true,
+      //   HTMLAttributes: {
+      //     class: "tiptap-image-upload",
+      //   },
+      // }),
       TextAlign.configure({ types: ["heading", "paragraph"] }),
     ],
     immediatelyRender: false,
     content,
   });
 
-  const [title, setTitle] = useState("");
+  const [title, setTitle] = useState("Blog 1");
   const [level, setLevel] = useState("advanced");
   const [course, setCourse] = useState("Spanish");
 
@@ -73,14 +64,17 @@ const TextEditor = () => {
     const blog = editor.getJSON();
 
     const BlogData = {
-      title: "Blog 1",
+      title: title,
       content: blog.content,
       courseID: course,
       level: level,
       publishedBy: "6836dc8c9694ffeaabd93188",
     };
+
+    console.log("Blog Data: ", BlogData);
+    return;
     try {
-      const response = await ResponseController(
+      const response = await RequestController(
         "/articles/create",
         "POST",
         BlogData
@@ -155,9 +149,9 @@ const TextEditor = () => {
               </RichTextEditor.ControlsGroup>
 
               {/* Image upload */}
-              <RichTextEditor.ControlsGroup>
+              {/* <RichTextEditor.ControlsGroup>
                 <ImageUploadButton editor={editor} />
-              </RichTextEditor.ControlsGroup>
+              </RichTextEditor.ControlsGroup> */}
 
               <RichTextEditor.ControlsGroup>
                 <RichTextEditor.AlignLeft />

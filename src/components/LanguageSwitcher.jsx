@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 export default function LanguageSwitcher() {
   const language = getCookie("NEXT_LOCALE");
   const router = useRouter();
-
   const SwitchLanguage = async (val) => {
     const locale = val === "en" ? "ar" : "en";
     setCookie("NEXT_LOCALE", locale);
